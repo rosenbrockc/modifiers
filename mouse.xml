@@ -19,12 +19,12 @@
       <identifier>remap.modifier.mousescroll</identifier>
       <autogen>
         __KeyToKey__
-        KeyCode::Q, ModifierFlag::SHIFT_R,
+        KeyCode::W, ModifierFlag::SHIFT_R,
         KeyCode::VK_MOUSEKEY_UP
       </autogen>
       <autogen>
         __KeyToKey__
-        KeyCode::W, ModifierFlag::SHIFT_R,
+        KeyCode::S, ModifierFlag::SHIFT_R,
         KeyCode::VK_MOUSEKEY_DOWN
       </autogen>            
       <autogen>
@@ -34,7 +34,7 @@
       </autogen>
       <autogen>
         __KeyToKey__
-        KeyCode::S, ModifierFlag::SHIFT_R,
+        KeyCode::D, ModifierFlag::SHIFT_R,
         KeyCode::VK_MOUSEKEY_RIGHT
       </autogen>
       <autogen>
