@@ -55,8 +55,8 @@
     </autogen>
     <autogen>
       __KeyToKey__
-      KeyCode::J, ModifierFlag::MODOPG,
-      KeyCode::L, ModifierFlag::COMMAND_L
+      KeyCode::L, ModifierFlag::MODOPG,
+      KeyCode::DOT, ModifierFlag::COMMAND_L
     </autogen>
   </item>
   <item>
