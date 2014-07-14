@@ -98,4 +98,12 @@
         KeyCode::ESCAPE
       </autogen>
     </item>
+    <item>
+      <name>Remap IP to Cmd + L</name>            
+      <identifier>remap.modifier.diaggoto</identifier>
+      <autogen>
+        __SimultaneousKeyPresses__
+        KeyCode::R, KeyCode::G,
+      KeyCode::P, ModifierFlag::COMMAND_L</autogen>
+    </item>
 </root>
