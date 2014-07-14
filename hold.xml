@@ -3,6 +3,7 @@
   <modifierdef>MODOPT</modifierdef>
   <modifierdef>MODOPG</modifierdef>
   <modifierdef>MODOPH</modifierdef>
+  <modifierdef>MODOPB</modifierdef>
   <item>
     <name>Hold MOD T</name>            
     <identifier>remap.modifier.holdmodt</identifier>
@@ -10,6 +11,15 @@
       __HoldingKeyToKey__ 
       KeyCode::T, KeyCode::T,
       KeyCode::VK_NONE, KeyCode::VK_MODIFIER_MODOPT, 
+    </autogen>
+  </item>
+  <item>
+    <name>Hold MOD B</name>            
+    <identifier>remap.modifier.holdmodb</identifier>
+    <autogen>
+      __HoldingKeyToKey__ 
+      KeyCode::B, KeyCode::B,
+      KeyCode::VK_NONE, KeyCode::VK_MODIFIER_MODOPB, 
     </autogen>
   </item>
   <item>
@@ -71,6 +81,65 @@
       __KeyToKey__
       KeyCode::I, ModifierFlag::MODOPT,
       KeyCode::CURSOR_UP
+    </autogen>
+  </item>
+  <item>
+    <name>Remap Numpad to X and GCR HTN MWV B for 789 456 123 0</name>
+    <identifier>remap.modifier.numpad</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::U, ModifierFlag::MODOPB,
+      KeyCode::KEYPAD_7
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::I, ModifierFlag::MODOPB,
+      KeyCode::KEYPAD_8
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::O, ModifierFlag::MODOPB,
+      KeyCode::KEYPAD_9
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::J, ModifierFlag::MODOPB,
+      KeyCode::KEYPAD_4
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::K, ModifierFlag::MODOPB,
+      KeyCode::KEYPAD_5
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::L, ModifierFlag::MODOPB,
+      KeyCode::KEYPAD_6
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::M, ModifierFlag::MODOPB,
+      KeyCode::KEYPAD_1
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::COMMA, ModifierFlag::MODOPB,
+      KeyCode::KEYPAD_2
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::DOT, ModifierFlag::MODOPB,
+      KeyCode::KEYPAD_3
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::N, ModifierFlag::MODOPB,
+      KeyCode::KEYPAD_0
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::H, ModifierFlag::MODOPB,
+      KeyCode::KEYPAD_DOT
     </autogen>
   </item>
 </root>
