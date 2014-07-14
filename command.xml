@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Command Mapping LH</name>
+        <appendix>This enables LH O to be Command for right side of KB</appendix>
+        <identifier>remap.modifier.lhcommand</identifier>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::Y, KeyCode::S,
+            KeyCode::Y, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::U, KeyCode::S,
+            KeyCode::U, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::I, KeyCode::S,
+            KeyCode::I, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::O, KeyCode::S,
+            KeyCode::O, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::P, KeyCode::S,
+            KeyCode::P, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::S,
+            KeyCode::H, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::K, KeyCode::S,
+            KeyCode::K, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::S,
+            KeyCode::L, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::N, KeyCode::S,
+            KeyCode::N, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::S,
+            KeyCode::M, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::SEMICOLON, KeyCode::S,
+            KeyCode::SEMICOLON, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::COMMA, KeyCode::S,
+            KeyCode::COMMA, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::DOT, KeyCode::S,
+            KeyCode::DOT, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::SLASH, KeyCode::S,
+            KeyCode::SLASH, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::S,
+            KeyCode::SPACE, ModifierFlag::COMMAND_L</autogen>
+    </item>        
+    <item>
+        <name>Command Mapping RH</name>
+        <appendix>This enables RH N to be Command for Left side of KB</appendix>
+        <identifier>remap.modifier.rhcommand</identifier>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::Q, KeyCode::L,
+            KeyCode::Q, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::W, KeyCode::L,
+            KeyCode::W, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::L,
+            KeyCode::E, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::R, KeyCode::L,
+            KeyCode::R, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::T, KeyCode::L,
+            KeyCode::T, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::L,
+            KeyCode::A, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::G, KeyCode::L,
+            KeyCode::G, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::Z, KeyCode::L,
+            KeyCode::Z, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::X, KeyCode::L,
+            KeyCode::X, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::C, KeyCode::L,
+            KeyCode::C, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::V, KeyCode::L,
+            KeyCode::V, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::B, KeyCode::L,
+            KeyCode::B, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::L,
+            KeyCode::SPACE, ModifierFlag::COMMAND_L</autogen>
+    </item>
+</root>

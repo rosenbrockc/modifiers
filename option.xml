@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Option Mapping LH</name>
+        <appendix>This enables LH E to be Option for right side of KB</appendix>
+        <identifier>remap.modifier.lhoption</identifier>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::Y, KeyCode::D,
+            KeyCode::Y, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::U, KeyCode::D,
+            KeyCode::U, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::I, KeyCode::D,
+            KeyCode::I, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::O, KeyCode::D,
+            KeyCode::O, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::P, KeyCode::D,
+            KeyCode::P, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::D,
+            KeyCode::H, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::D,
+            KeyCode::L, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::N, KeyCode::D,
+            KeyCode::N, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::D,
+            KeyCode::M, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::SEMICOLON, KeyCode::D,
+            KeyCode::SEMICOLON, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::COMMA, KeyCode::D,
+            KeyCode::COMMA, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::DOT, KeyCode::D,
+            KeyCode::DOT, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::SLASH, KeyCode::D,
+            KeyCode::SLASH, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::D,
+            KeyCode::SPACE, ModifierFlag::OPTION_L</autogen>
+    </item>        
+    <item>
+        <name>Option Mapping RH</name>
+        <appendix>This enables RH T to be Option for Left side of KB</appendix>
+        <identifier>remap.modifier.rhoption</identifier>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::Q, KeyCode::K,
+            KeyCode::Q, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::W, KeyCode::K,
+            KeyCode::W, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::K,
+            KeyCode::E, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::R, KeyCode::K,
+            KeyCode::R, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::T, KeyCode::K,
+            KeyCode::T, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::K,
+            KeyCode::A, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::G, KeyCode::K,
+            KeyCode::G, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::D, KeyCode::K,
+            KeyCode::D, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::K,
+            KeyCode::F, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::Z, KeyCode::K,
+            KeyCode::Z, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::X, KeyCode::K,
+            KeyCode::X, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::C, KeyCode::K,
+            KeyCode::C, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::V, KeyCode::K,
+            KeyCode::V, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::B, KeyCode::K,
+            KeyCode::B, ModifierFlag::OPTION_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::K,
+            KeyCode::SPACE, ModifierFlag::OPTION_L</autogen>
+    </item>
+</root>

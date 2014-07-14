@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>I+U Maps to Ctrl+X</name>            
+	<identifier>remap.modifier.controlx</identifier>
+	<only>EMACS</only>
+        <autogen>
+            __SimultaneousKeyPresses__
+            KeyCode::G, KeyCode::F,
+            KeyCode::B,   ModifierFlag::CONTROL_L
+        </autogen>
+    </item>
+    <item>
+        <name>B+M Maps to Meta+X</name>            
+	<identifier>remap.modifier.optionx</identifier>
+	<only>EMACS</only>
+        <autogen>
+            __SimultaneousKeyPresses__
+            KeyCode::N, KeyCode::M,
+            KeyCode::B,   ModifierFlag::OPTION_L
+        </autogen>
+    </item>        
+    <item>
+      <name>KX to Control S</name>            
+      <identifier>remap.modifier.controlS</identifier>
+      <only>EMACS</only>
+      <autogen>
+	__SimultaneousKeyPresses__ 
+	KeyCode::V, KeyCode::B,
+        KeyCode::SEMICOLON,   ModifierFlag::CONTROL_L
+      </autogen>
+    </item>
+    <item>
+      <name>Remap U&gt; and HC to Ctr G</name>            
+      <identifier>remap.modifier.diagctrlg</identifier>
+      <only>EMACS</only>
+      <autogen>
+        __SimultaneousKeyPresses__
+        KeyCode::F, KeyCode::E,
+      KeyCode::U, ModifierFlag::CONTROL_L</autogen>
+      <autogen>
+        __SimultaneousKeyPresses__
+        KeyCode::J, KeyCode::I,
+        KeyCode::U, ModifierFlag::CONTROL_L
+      </autogen>
+    </item>
+    <item>
+      <name>Remap IP to Cmd + L</name>            
+      <identifier>remap.modifier.diaggoto</identifier>
+      <only>EMACS</only>
+      <autogen>
+        __SimultaneousKeyPresses__
+        KeyCode::R, KeyCode::G,
+      KeyCode::P, ModifierFlag::COMMAND_L</autogen>
+    </item>
+</root>

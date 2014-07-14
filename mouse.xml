@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Remap Mousewheel to RSHIFT and YI(up/down)</name>            
+	    <identifier>remap.modifier.mousewheel</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::T, ModifierFlag::SHIFT_R,
+            KeyCode::VK_MOUSEKEY_SCROLL_UP
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::G, ModifierFlag::SHIFT_R,
+            KeyCode::VK_MOUSEKEY_SCROLL_DOWN
+        </autogen>
+    </item>
+    <item>
+      <name>Remap Mousescroll to SHIFT_R and "(up) &lt;(down) A (left) O (right)</name>          
+      <identifier>remap.modifier.mousescroll</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::Q, ModifierFlag::SHIFT_R,
+        KeyCode::VK_MOUSEKEY_UP
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::W, ModifierFlag::SHIFT_R,
+        KeyCode::VK_MOUSEKEY_DOWN
+      </autogen>            
+      <autogen>
+        __KeyToKey__
+        KeyCode::A, ModifierFlag::SHIFT_R,
+        KeyCode::VK_MOUSEKEY_LEFT
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::S, ModifierFlag::SHIFT_R,
+        KeyCode::VK_MOUSEKEY_RIGHT
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::C, ModifierFlag::SHIFT_R,
+        KeyCode::VK_MOUSEKEY_BUTTON_LEFT
+      </autogen>
+    </item>
+</root>

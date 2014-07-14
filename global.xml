@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>H+T Maps to Delete</name>            
+    <identifier>remap.modifier.simulGCtoFD</identifier>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::K, KeyCode::J,
+    KeyCode::DELETE</autogen>
+  </item>
+  <item>
+    <name>T+N Maps to Forward Delete</name>            
+    <identifier>remap.modifier.simulRCtoFD</identifier>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::K, KeyCode::L,
+    KeyCode::FORWARD_DELETE</autogen>
+  </item>
+  <item>
+    <name>Remap Arrow keys to >P/GC (up/down) and &lt;&gt;/CR (left/right)</name>            
+    <identifier>remap.modifier.arrowkeysSIM</identifier>
+    <autogen>
+      __SimultaneousKeyPresses__
+      KeyCode::E, KeyCode::R,
+      KeyCode::CURSOR_UP
+    </autogen>
+    <autogen>
+      __SimultaneousKeyPresses__
+      KeyCode::U, KeyCode::I,
+      KeyCode::CURSOR_DOWN
+    </autogen>
+    <autogen>
+      __SimultaneousKeyPresses__
+      KeyCode::E, KeyCode::W,
+      KeyCode::CURSOR_LEFT
+    </autogen>
+    <autogen>
+      __SimultaneousKeyPresses__
+      KeyCode::I, KeyCode::O,
+      KeyCode::CURSOR_RIGHT
+    </autogen>
+    </item>
+    <item>
+      <name>Map Delete to HOME</name>            
+      <identifier>remap.modifier.DeleteToHome</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::DELETE,
+        KeyCode::HOME
+      </autogen>
+    </item>
+    <item>
+      <name>Remap DG to =</name>            
+      <identifier>remap.modifier.diagequals</identifier>
+      <autogen>
+        __SimultaneousKeyPresses__
+        KeyCode::H, KeyCode::U,
+        KeyCode::BRACKET_RIGHT
+      </autogen>
+    </item>
+    <item>
+      <name>Map Delete+Equals to End</name>            
+      <identifier>remap.modifier.EqualDeleteToEnd</identifier>
+      <autogen>
+        __SimultaneousKeyPresses__
+        KeyCode::DELETE, KeyCode::EQUAL,
+        KeyCode::END
+      </autogen>
+    </item>
+    <item>
+      <name>Remap D+H to Enter and F+G to \</name>            
+      <identifier>remap.modifier.enterbackslash</identifier>
+      <autogen>
+        __SimultaneousKeyPresses__
+        KeyCode::J, KeyCode::H,
+      KeyCode::ENTER</autogen>
+      <autogen>
+        __SimultaneousKeyPresses__
+        KeyCode::Y, KeyCode::U,
+        KeyCode::BACKSLASH
+      </autogen>
+    </item>
+    <item>
+      <name>Remap >+P to Undo and OE to Redo</name>            
+      <identifier>remap.modifier.undoredo</identifier>
+      <autogen>
+        __SimultaneousKeyPresses__
+        KeyCode::D, KeyCode::F,
+      KeyCode::SLASH, ModifierFlag::COMMAND_L</autogen>
+      <autogen>
+        __SimultaneousKeyPresses__
+        KeyCode::D, KeyCode::S,
+        KeyCode::SLASH, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+      </autogen>
+    </item>
+    <item>
+      <name>Remap P+Y to ESC</name>            
+      <identifier>remap.modifier.escape</identifier>
+      <autogen>
+        __SimultaneousKeyPresses__
+        KeyCode::R, KeyCode::T,
+        KeyCode::ESCAPE
+      </autogen>
+    </item>
+</root>

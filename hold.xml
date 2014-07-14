@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<root>
+  <modifierdef>MODOPT</modifierdef>
+  <modifierdef>MODOPG</modifierdef>
+  <modifierdef>MODOPH</modifierdef>
+  <item>
+    <name>Hold MOD T</name>            
+    <identifier>remap.modifier.holdmodt</identifier>
+    <autogen>
+      __HoldingKeyToKey__ 
+      KeyCode::T, KeyCode::T,
+      KeyCode::VK_NONE, KeyCode::VK_MODIFIER_MODOPT, 
+    </autogen>
+  </item>
+  <item>
+    <name>Hold MOD G</name>            
+    <identifier>remap.modifier.holdmodg</identifier>
+    <autogen>
+      __HoldingKeyToKey__ 
+      KeyCode::G, KeyCode::G,
+      KeyCode::VK_NONE, KeyCode::VK_MODIFIER_MODOPG, 
+    </autogen>
+  </item>
+  <item>
+    <name>Hold MOD H</name>            
+    <identifier>remap.modifier.holdmodh</identifier>
+    <autogen>
+      __HoldingKeyToKey__ 
+      KeyCode::H, KeyCode::H,
+      KeyCode::VK_NONE, KeyCode::VK_MODIFIER_MODOPH, 
+    </autogen>
+  </item>
+  <item>
+    <name>MOD G + H/T/N remaps to Copy/Cut/Paste</name>            
+    <identifier>remap.modifier.modgcutcopy</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::K, ModifierFlag::MODOPG,
+      KeyCode::B, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::J, ModifierFlag::MODOPG,
+      KeyCode::I, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::J, ModifierFlag::MODOPG,
+      KeyCode::L, ModifierFlag::COMMAND_L
+    </autogen>
+  </item>
+  <item>
+    <name>MOD T + C/H/T/N remaps to Up/Left/Down/Right</name>            
+    <identifier>remap.modifier.modtarrows</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::K, ModifierFlag::MODOPT,
+      KeyCode::CURSOR_DOWN
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::J, ModifierFlag::MODOPT,
+      KeyCode::CURSOR_LEFT
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::L, ModifierFlag::MODOPT,
+      KeyCode::CURSOR_RIGHT
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::I, ModifierFlag::MODOPT,
+      KeyCode::CURSOR_UP
+    </autogen>
+  </item>
+</root>
