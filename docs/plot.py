@@ -38,7 +38,8 @@ locations = {
     "KEY_5": (203, 82, 0, "5"), 
     "KEY_6": (242, 82, 0, "6"), "KEY_7": (280, 82, 0, "7"), "KEY_8": (318, 82, 0, "8"), 
     "KEY_9": (356, 82, 0, "9"), 
-    "KEY_0": (394, 82, 0, "0"), "MINUS": (432, 82, 0, "-"), "EQUAL": (470, 82, 0, "+"), 
+    "KEY_0": (394, 82, 0, "0"), "MINUS": (432, 82, 0, "-", "{"), 
+    "EQUAL": (470, 82, 0, "+", "}"), 
     "DELETE": (508, 82, 1, "Backspace"), 
 
     "HELP": (603, 82, 15, "Insert"), "HOME": (641, 82, 15, "Home"), 
@@ -47,29 +48,36 @@ locations = {
     "KEYPAD_MULTIPLY": (814, 82, 0, "*"), "KEYPAD_MINUS": (852, 82, 0, "-"), 
 
     "TAB": (13, 122, 2, "Tab"), 
-    "Q": (69, 122, 0, 0), "W": (107, 122, 0, 0), "E": (146, 122, 0, 0), "R": (184, 122, 0, 0), 
-    "T": (222, 122, 0, 0), "Y": (260, 122, 0, 0), "U": (297, 122, 0, 0), "I": (336, 122, 0, 0),
-    "O": (374, 122, 0, 0), "P": (412, 122, 0, 0), "BRACKET_LEFT": (449, 122, 0, "{"), 
-    "BRACKET_RIGHT": (487, 122, 0, "}"), "BACKSLASH": (526, 122, 3, "\\"), 
+    "Q": (69, 122, 0, 0, "'"), "W": (107, 122, 0, 0, ","), 
+    "E": (146, 122, 0, 0, "."), "R": (184, 122, 0, 0, "P"), 
+    "T": (222, 122, 0, 0, "Y"), "Y": (260, 122, 0, 0, "F"), 
+    "U": (297, 122, 0, 0, "G"), "I": (336, 122, 0, 0, "C"),
+    "O": (374, 122, 0, 0, "R"), "P": (412, 122, 0, 0, "L"), 
+    "BRACKET_LEFT": (449, 122, 0, "{", "/"), 
+    "BRACKET_RIGHT": (487, 122, 0, "}", "="), "BACKSLASH": (526, 122, 3, "\\"), 
 
     "FORWARD_DELETE": (602, 122, 14, "Del"), 
-    "END": (640, 122, 14, "End"), "PAGEDOWN": (678, 122, 15, "PgDn"), "KEYPAD_7": (737, 122, 0, "7"), 
+    "END": (640, 122, 14, "End"), "PAGEDOWN": (678, 122, 15, "PgDn"), 
+    "KEYPAD_7": (737, 122, 0, "7"), 
     "KEYPAD_8": (775, 122, 0, "8"), "KEYPAD_9": (813, 122, 0, "9"), 
     "KEYPAD_PLUS": (852, 122, 4, "+"), 
     
-    "CAPSLOCK": (13, 161, 5, "Caps Lock"), "A": (79, 161, 0, 0), "S": (117, 161, 0, 0), 
-    "D": (156, 161, 0, 0), "F": (194, 161, 0, 0), "G": (232, 161, 0, 0), "H": (270, 161, 0, 0), 
-    "J": (308, 161, 0, 0), "K": (346, 161, 0, 0), "L": (384, 161, 0, 0), 
-    "SEMICOLON": (422, 161, 0, ":"), 
-    "QUOTE": (461, 161, 0, '"'), "RETURN": (499, 161, 6, "Enter"), 
+    "CAPSLOCK": (13, 161, 5, "Caps Lock"), "A": (79, 161, 0, 0), "S": (117, 161, 0, 0, "O"), 
+    "D": (156, 161, 0, 0, "E"), "F": (194, 161, 0, 0, "U"), "G": (232, 161, 0, 0, "I"), 
+    "H": (270, 161, 0, 0, "D"), 
+    "J": (308, 161, 0, 0, "H"), "K": (346, 161, 0, 0, "T"), "L": (384, 161, 0, 0, "N"), 
+    "SEMICOLON": (422, 161, 0, ":", "S"), 
+    "QUOTE": (461, 161, 0, '"', "-"), "RETURN": (499, 161, 6, "Enter"), 
 
     "KEYPAD_4": (737, 161, 0, "4"), 
     "KEYPAD_5": (776, 161, 0, "5"), "KEYPAD_6": (814, 161, 0, "6"), 
 
     "SHIFT_L": (13, 200, 7, "Shift"), 
-    "Z": (106, 200, 0, 0), "X": (145, 200, 0, 0), "C": (183, 200, 0, 0), "V": (222, 200, 0, 0), 
-    "B": (260, 200, 0, 0), "N": (298, 200, 0, 0), "M": (336, 200, 0, 0), 
-    "COMMA": (374, 200, 0, ","), "DOT": (413, 200, 0, "."), "SLASH": (451, 200, 0, "?"), 
+    "Z": (106, 200, 0, 0, ";"), "X": (145, 200, 0, 0, "Q"), "C": (183, 200, 0, 0, "J"), 
+    "V": (222, 200, 0, 0, "K"), 
+    "B": (260, 200, 0, 0, "X"), "N": (298, 200, 0, 0, "B"), "M": (336, 200, 0, 0), 
+    "COMMA": (374, 200, 0, ",", "W"), "DOT": (413, 200, 0, ".", "V"), 
+    "SLASH": (451, 200, 0, "?", "Z"), 
     "SHIFT_R": (489, 200, 8, "Shift"), 
 
     "CURSOR_UP": (641, 200, 0, u"↑"), "KEYPAD_1": (738, 201, 0, "1"), 
@@ -486,6 +494,16 @@ def _plot_legend(ax, enlarge, yshift):
         ax.text(enlarge*(x + width/2 + 10), enlarge*(y + 2 + yshift), text, fontsize=8,
                 color='black', ha='left', va='top', alpha=1)
 
+def _plot_titles(ax, enlarge, yshift, source):
+    """Adds the keyboard and mouse titles to the plot."""
+    if source:
+        title = "Source Keyboard"
+    else:
+        title = "Target Keyboard"
+    ax.text(enlarge*500, enlarge*yshift - 25, title, fontsize=14, 
+            weight="bold", ha="center")
+    ax.text(enlarge*920, enlarge*yshift, "Mouse", fontsize=10)
+
 def keyboard(remappings, source=True):
     from operator import itemgetter
     ax = plt.gca()
@@ -497,7 +515,7 @@ def keyboard(remappings, source=True):
     yshift = 50 if source else 450
 
     for lkey in locations:
-        (x,y,t,s) = locations[lkey]
+        (x,y,t,s) = locations[lkey][0:4]
         color, shortcut = remappings.get_color(lkey, source)
         width, height = bsizes[t]
         rect = plt.Rectangle([enlarge*(x), enlarge*(y + yshift)],  width, height,
@@ -523,18 +541,16 @@ def keyboard(remappings, source=True):
 
     ax.autoscale_view()
     plt.axis("off")
-    if source:
-        title = "Source Keyboard"
-    else:
-        title = "Target Keyboard"
-    ax.text(enlarge*500, enlarge*yshift - 25, title, fontsize=14, 
-            weight="bold", ha="center")
-    ax.text(enlarge*920, enlarge*yshift, "Mouse", fontsize=10)
+    _plot_titles(ax, enlarge, yshift, source)
 
     for lkey in locations:
-        (x,y,t,s) = locations[lkey]
+        (x,y,t,s) = locations[lkey][0:4]
         width, height = bsizes[t]
-        if s == 0:
+        
+        #Handle the printing of Dvorak keyboard layout.
+        if args["dvorak"] and len(locations[lkey]) > 4:
+            s = locations[lkey][4]
+        elif s == 0:
             s = lkey
         ax.text(enlarge*(x + 2), enlarge*(y + 2 + yshift), s, fontsize=5,
                 color='black', ha='left', va='top', alpha=1)
@@ -554,7 +570,14 @@ def run():
         keyboard(remappings, True)
         keyboard(remappings, False)
         plt.gca().invert_yaxis()
-        plt.savefig(xfile.replace(".xml", ".pdf"))
+        if not args["image"]:
+            if args["dvorak"]:
+                plt.savefig(xfile.replace(".xml", "-dvo.pdf"))
+            else:
+                plt.savefig(xfile.replace(".xml", ".pdf"))
+        else:
+            #Save a vector image instead of the pdf.
+            plt.savefig(xfile.replace(".xml", ".png"))
 
         #Get the plot ready for the next keyboard mapping set.
         plt.cla()
@@ -563,6 +586,10 @@ def run():
 parser = argparse.ArgumentParser(description="MODIFIERS Key Remapping Plotter")
 parser.add_argument("sources",  nargs="+", 
                     help="Specify the path(s) to the source XML remapping files.")
+parser.add_argument("-dvorak", action="store_true",
+                    help="Present a Dvorak keyboard for the images.")
+parser.add_argument("-image", action="store_true",
+                    help="Save the files as images instead of PDFs.")
 
 #Parse the args from the commandline that ran the script, call initialize
 args = vars(parser.parse_args())
