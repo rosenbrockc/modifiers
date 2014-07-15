@@ -8,19 +8,30 @@ import argparse
 import matplotlib
 
 matplotlib.rc('font', family='arial unicode ms')
+#These first few lists and dictionaries are all hard-coded to include the
+#positions of keys on the keyboard, their labels and the various constants
+#used in Kabiner to identify them.
 sizes = [(35,35), (65,35), (48, 35), (47, 35), (35,76), (59,35), (74,35), (85,35),
          (85,35), (35, 76), (49, 35), (46, 35), (204, 35), (70, 35), (35, 35),
          (35,35)]
+"""A list of the width, height of the different kinds of keys on the keyboard;
+for example the long and narrow vs. the narrow and long.
+"""
 custmods = {
     "MODOPG": "VK_MODIFIER_MODOPG",
     "MODOPT": "VK_MODIFIER_MODOPT",
     "MODOPB": "VK_MODIFIER_MODOPB",
     "MODOPH": "VK_MODIFIER_MODOPH"
 }
+"""A dict of new virtual modifiers defined using the hold key option in v10.
+"""
 modifiers = ["MODOPG", "MODOPT", "MODOPB", "MODOPH", "CONTROL_L", "CONTROL_R",
              "OPTION_L", "OPTION_R", "COMMAND_L", "COMMAND_R", "SHIFT_L", "SHIFT_R",
              "CAPSLOCK", "VK_MODIFIER_MODOPG", "VK_MODIFIER_MODOPT", 
              "VK_MODIFIER_MODOPB", "VK_MODIFIER_MODOPH"]
+"""Modifiers get colored a little differently than the rest of the keys.
+This list keeps track of normal and virtual modifiers for coloring.
+"""
 locations = {
     "ESCAPE": (13, 10, 0, "Esc"), "F1": (78, 10, 0, 0), "F2": (116, 10, 0, 0), 
     "F3": (154, 10, 0, 0), "F4": (193, 10, 0, 0), "F5": (253, 10, 0, 0), 
@@ -111,14 +122,42 @@ locations = {
     "VK_MOUSEKEY_BUTTON_MIDDLE": (945, 10, 0, "CB"),
     "VK_MOUSEKEY_BUTTON_RIGHT": (983, 10, 0, "RB")
 }
+"""Karabiner special codes are the keys; values is a tuple of (x, y, keytype, label, 
+dvorak), where dvorak is the label when printing a dvorak keyboard layout. Keytype
+refers to the index in the 'sizes' list.
+"""
 keylengths = {
     "SimultaneousKeyPresses": 2,
     "KeyToKey": 1,
     "HoldingKeyToKey": 2
 }
+"""Key press type is the key, the value is the number of keys that participate in
+that key type; e.g. simultaneous key press requires two keys.
+"""
 special = ["VK_NONE"]
+"""Some virtual keys that don't get plotted on a keyboard are still used in the
+remapping scheme. This is a list of those keys.
+"""
 
 class Autogen(object):
+    """Represents a single <autogen> tag that is child to an <item> tag in a
+    custom configuration file in Kabiner.
+
+    :attr xml: the XML element that the instance was created from.
+    :attr keytype: one of the keys in global 'keylengths'.
+    :attr codes: the key codes (modifiers or normal keys) that define the
+      remapping. Must be an item in global 'special', or a key in one of
+      global 'custmods' or global 'locations'.
+    :attr parent: the Remap instance that generated this Autogen.
+    :attr shortcut: an integer representing the shorcut symbol to identify
+      this autogen remapping. For example, a value of 65 (ASCII for 'A')
+      would show up as 'A' on each key in this remapping.
+    :attr multiple: if a key used in this autogen's remapping is also used
+      by another autogen, then multiple is True.
+    :attr isources: since modifiers don't really count toward the number of
+      keys required by a key press type (e.g. simultaneous requires 2), we need
+      a number to keep track of how many 'codes' belong to the source mapping.
+    """
     def __init__(self, xmltag, parent):
         self.xml = xmltag
         self.keytype = None
@@ -144,7 +183,8 @@ class Autogen(object):
 
     @property
     def sources(self):
-        """Returns the source key press codes."""
+        """Returns the source key press codes. Source presses are those keys
+        that must be pressed in order to remap to the 'targets'."""
         if self.keytype is not None and self.isources is not None:
             return self.codes[0:self.isources]
         else:
@@ -203,6 +243,15 @@ class Autogen(object):
                     self.isources += 1
 
 class Remap(object):
+    """Represents a set of <autogen> remappings all contained within a single
+    <item> tag in the Karabiner XML configuration file.
+
+    :attr xml: the original XML tag that the instance was created from.
+    :attr name: the user-friendly name of the remapping item.
+    :attr identifier: the system key to identify the remappings for enabling/
+      disabling them on the local machine.
+    :attr autogens: a list of Autogen instances, one for each <autogen> tag.
+    """
     def __init__(self, xmltag):
         self.xml = xmltag
         self.name = None
@@ -224,8 +273,19 @@ class Remap(object):
                 self.identifier = child.text
 
 class RemapFile(object):
-    """Represents one of the include files from the Kabiner remapping
+    """Represents one of the <include> files from the Kabiner remapping
     program.
+
+    :attr filepath: the full path to the XML file contaning the mappings.
+    :attr remaps: a list of Remap instances, one for each <item> tag.
+    :attr xml: the original XML *root* element in the configuration file.
+    :attr sources: a dictionary of all key mappings in the file. The key
+      is an identifier from the keys of global 'locations' or global
+      'custmods'. The value is a list of Autogen instances that use that
+      key in their remappings. Sources are keys that get pushed to activate
+      the target remapping.
+    :attr targets: as for sources, except the keys used are the ones that get
+      emulated by Karabiner after the source keys are pushed.
     """
     def __init__(self, filepath):
         """Parses the XML file at the given file path and looks for
@@ -260,7 +320,11 @@ class RemapFile(object):
                 self._add_target(autogen)
 
         #Examine all the sources for multiple combinations on keys
-        #that get used more than once.
+        #that get used more than once. ichar for the sources is the
+        #last character that was assigned as a shortcut for one of the
+        #Autogen instances. Any stragglers picked up in the targets that
+        #weren't in the sources (usually virtual modifiers) must start
+        #from the place we left off.
         ichar = self._process_autogen_color(True)
         self._process_autogen_color(False, ichar)
 
@@ -281,7 +345,8 @@ class RemapFile(object):
         for key in autogen.sources:
             if key in self.sources:
                 #We only want to add this source in if its autogen instance is
-                #not already in the list.
+                #not already in the list. This is because a single shortcut is assigned
+                #to *all* the keys in a single autogen.
                 sameinst = [a for a in self.sources[key] if a is autogen]
                 if len(sameinst) == 0:
                     self.sources[key].append(autogen)
@@ -295,6 +360,9 @@ class RemapFile(object):
             "KeyToKey": "green",
             "HoldingKeyToKey": "blue"
         }
+        #The key types only really influence the *sources*. All the targets are
+        #regular key-to-key combinations because they have to be understood by
+        #the operating system.
         if keytype in dcolor:
             if source:
                 return dcolor[keytype]
@@ -353,10 +421,13 @@ class RemapFile(object):
         """Determines the key color based on the number of unique key types
         in the remapping list for a single key.
         """
+        #All modifiers are just brown by default.
         if key in modifiers:
             return "brown"
 
         if len(autogens) > 1:
+            #We need to see if the multiple key mappings are all of
+            #the same type for the key.
             if len(set([a.keytype for a in autogens])) == 1:
                 return "purple"
             else:
@@ -379,6 +450,8 @@ class RemapFile(object):
             return (self._get_key_color(keydict[key], source, key),
                     self._get_shortcut_text(keydict[key]))
         elif "MOUSE" in key:
+            #Do special formatting of the mouse blocks so they are
+            #distinguished from the keyboard ones.
             return ("white", "")
         else:
             return ("gray", "")
@@ -483,7 +556,8 @@ def _plot_legend(ax, enlarge, yshift):
               ("green", 183, 300, "Key to Key"),
               ("blue", 333, 300, "Hold Key"),
               ("purple", 463, 300, "Multiple Remaps"),
-              ("orange", 653, 300, "Multiple Remap Types")]
+              ("orange", 653, 300, "Multiple Remap Types"),
+              ("brown", 890, 300, "Modifier")]
 
     width, height = (35*enlarge, 35*enlarge)
     for color, x, y, text in legend:
@@ -505,6 +579,10 @@ def _plot_titles(ax, enlarge, yshift, source):
     ax.text(enlarge*920, enlarge*yshift, "Mouse", fontsize=10)
 
 def keyboard(remappings, source=True):
+    """Plots the keyboard buttons and labels; colors for the keys as well as
+    shortcuts representing remappings are extracted using the get_color() of
+    the 'remappings' RemapFile instance supplied.
+    """
     from operator import itemgetter
     ax = plt.gca()
     ax.set_aspect('equal')
@@ -577,7 +655,10 @@ def run():
                 plt.savefig(xfile.replace(".xml", ".pdf"))
         else:
             #Save a vector image instead of the pdf.
-            plt.savefig(xfile.replace(".xml", ".png"))
+            if args["dvorak"]:
+                plt.savefig(xfile.replace(".xml", "-dvo.svg"))
+            else:
+                plt.savefig(xfile.replace(".xml", ".svg"))
 
         #Get the plot ready for the next keyboard mapping set.
         plt.cla()
