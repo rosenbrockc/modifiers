@@ -34,37 +34,6 @@
             KeyCode::SPACE, ModifierFlag::CONTROL_L</autogen>
     </item>
     <item>
-        <name>Control R Mapping LH</name>
-        <appendix>This enables LH A to be Control R for right side of KB</appendix>
-        <identifier>remap.modifier.lhfunction</identifier>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::Y, KeyCode::A,
-            KeyCode::Y, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::U, KeyCode::A,
-            KeyCode::U, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::I, KeyCode::A,
-            KeyCode::I, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::O, KeyCode::A,
-            KeyCode::O, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::P, KeyCode::A,
-            KeyCode::P, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::A,
-            KeyCode::H, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::N, KeyCode::A,
-            KeyCode::N, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::A,
-            KeyCode::M, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::SEMICOLON, KeyCode::A,
-            KeyCode::SEMICOLON, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::COMMA, KeyCode::A,
-            KeyCode::COMMA, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::DOT, KeyCode::A,
-            KeyCode::DOT, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::SLASH, KeyCode::A,
-            KeyCode::SLASH, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::A,
-            KeyCode::SPACE, ModifierFlag::CONTROL_R</autogen>
-    </item>
-    <item>
         <name>Control Mapping RH</name>
         <appendix>This enables LH H to be Control for Left side of KB</appendix>
         <identifier>remap.modifier.rhcontrol</identifier>
@@ -100,34 +69,5 @@
             KeyCode::B, ModifierFlag::CONTROL_L</autogen>
         <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::J,
             KeyCode::SPACE, ModifierFlag::CONTROL_L</autogen>
-    </item>
-    <item>
-        <name>Control R Mapping RH</name>
-        <appendix>This enables RH S to be Control R for Left side of KB</appendix>
-        <identifier>remap.modifier.rhfunction</identifier>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::Q, KeyCode::SEMICOLON,
-            KeyCode::Q, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::W, KeyCode::SEMICOLON,
-            KeyCode::W, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::SEMICOLON,
-            KeyCode::E, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::R, KeyCode::SEMICOLON,
-            KeyCode::R, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::T, KeyCode::SEMICOLON,
-            KeyCode::T, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::G, KeyCode::SEMICOLON,
-            KeyCode::G, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::Z, KeyCode::SEMICOLON,
-            KeyCode::Z, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::X, KeyCode::SEMICOLON,
-            KeyCode::X, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::C, KeyCode::SEMICOLON,
-            KeyCode::C, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::V, KeyCode::SEMICOLON,
-            KeyCode::V, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::B, KeyCode::SEMICOLON,
-            KeyCode::B, ModifierFlag::CONTROL_R</autogen>
-        <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::SEMICOLON,
-            KeyCode::SPACE, ModifierFlag::CONTROL_R</autogen>
     </item>
 </root>
