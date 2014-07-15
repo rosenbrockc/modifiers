@@ -13,3 +13,30 @@ Installation
     - Click "ReloadXML"
     - Expand the "Modifier Optimizer" group (at the top of the list)
     - Enable all of the options you like.
+
+Documentation
+------
+
+Auto-generated PDF files of all the key remappings in Modifiers are included in the `docs` folder. They are best viewed as PDFs because of the vector nature of the output. I tried doing other formats like PNG, but it looked grainy. One PDF gets generated for each of the XML files referenced in `private.xml`.
+
+### US QWERTY Keyboard Layout
+
+- [command.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/command.pdf)
+- [option.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/option.pdf)
+- [control.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/control.pdf)
+- [super.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/super.pdf)
+- [global.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/global.pdf)
+- [hold.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/hold.pdf)
+- [mouse.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/mouse.pdf)
+- [emacs.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/emacs.pdf)
+
+### DVORAK Keyboard Layout
+
+- [command.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/command-dvo.pdf)
+- [option.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/option-dvo.pdf)
+- [control.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/control-dvo.pdf)
+- [super.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/super-dvo.pdf)
+- [global.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/global-dvo.pdf)
+- [hold.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/hold-dvo.pdf)
+- [mouse.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/mouse-dvo.pdf)
+- [emacs.xml](https://github.com/rosenbrockc/modifiers/blob/master/docs/emacs-dvo.pdf)
