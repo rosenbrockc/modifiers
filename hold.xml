@@ -60,6 +60,38 @@
     </autogen>
   </item>
   <item>
+    <name>MOD G + R remaps to find/replace (Option-%)</name>            
+    <identifier>remap.modifier.modgreplace</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::O, ModifierFlag::MODOPG,
+      KeyCode::KEY_5, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L
+    </autogen>
+  </item>  
+  <item>
+    <name>MOD G + S remaps to comment code (Opt+;)</name>            
+    <identifier>remap.modifier.modgcommentcode</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::SEMICOLON, ModifierFlag::MODOPG,
+      KeyCode::Z, ModifierFlag::OPTION_L
+    </autogen>
+  </item>  
+  <item>
+    <name>MOD G + G/C remaps to Super + QJ</name>            
+    <identifier>remap.modifier.modgfastmetawords</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::U, ModifierFlag::MODOPG,
+      KeyCode::X, ModifierFlag::CONTROL_R
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::I, ModifierFlag::MODOPG,
+      KeyCode::C, ModifierFlag::CONTROL_R
+    </autogen>
+  </item>    
+  <item>
     <name>MOD T + C/H/T/N remaps to Up/Left/Down/Right</name>            
     <identifier>remap.modifier.modtarrows</identifier>
     <autogen>
