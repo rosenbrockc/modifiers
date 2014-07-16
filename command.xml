@@ -34,6 +34,18 @@
             KeyCode::SLASH, ModifierFlag::COMMAND_L</autogen>
         <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::S,
             KeyCode::SPACE, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_7, KeyCode::S,
+            KeyCode::KEY_7, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_8, KeyCode::S,
+            KeyCode::KEY_8, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_9, KeyCode::S,
+            KeyCode::KEY_9, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_0, KeyCode::S,
+            KeyCode::KEY_0, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::MINUS, KeyCode::S,
+            KeyCode::MINUS, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::EQUAL, KeyCode::S,
+            KeyCode::EQUAL, ModifierFlag::COMMAND_L</autogen>
     </item>        
     <item>
         <name>Command Mapping RH</name>
@@ -65,5 +77,17 @@
             KeyCode::B, ModifierFlag::COMMAND_L</autogen>
         <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::L,
             KeyCode::SPACE, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_1, KeyCode::L,
+            KeyCode::KEY_1, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_2, KeyCode::L,
+            KeyCode::KEY_2, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_3, KeyCode::L,
+            KeyCode::KEY_3, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_4, KeyCode::L,
+            KeyCode::KEY_4, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_5, KeyCode::L,
+            KeyCode::KEY_5, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_6, KeyCode::L,
+            KeyCode::KEY_6, ModifierFlag::COMMAND_L</autogen>
     </item>
 </root>

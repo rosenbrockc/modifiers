@@ -32,6 +32,18 @@
             KeyCode::SLASH, ModifierFlag::CONTROL_L</autogen>
         <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::F,
             KeyCode::SPACE, ModifierFlag::CONTROL_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_7, KeyCode::F,
+            KeyCode::KEY_7, ModifierFlag::CONTROL_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_8, KeyCode::F,
+            KeyCode::KEY_8, ModifierFlag::CONTROL_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_9, KeyCode::F,
+            KeyCode::KEY_9, ModifierFlag::CONTROL_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_0, KeyCode::F,
+            KeyCode::KEY_0, ModifierFlag::CONTROL_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::MINUS, KeyCode::F,
+            KeyCode::MINUS, ModifierFlag::CONTROL_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::EQUAL, KeyCode::F,
+            KeyCode::EQUAL, ModifierFlag::CONTROL_L</autogen>
     </item>
     <item>
         <name>Control Mapping RH</name>
@@ -69,5 +81,17 @@
             KeyCode::B, ModifierFlag::CONTROL_L</autogen>
         <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::J,
             KeyCode::SPACE, ModifierFlag::CONTROL_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_1, KeyCode::J,
+            KeyCode::KEY_1, ModifierFlag::CONTROL_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_2, KeyCode::J,
+            KeyCode::KEY_2, ModifierFlag::CONTROL_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_3, KeyCode::J,
+            KeyCode::KEY_3, ModifierFlag::CONTROL_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_4, KeyCode::J,
+            KeyCode::KEY_4, ModifierFlag::CONTROL_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_5, KeyCode::J,
+            KeyCode::KEY_5, ModifierFlag::CONTROL_L</autogen>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_6, KeyCode::J,
+            KeyCode::KEY_6, ModifierFlag::CONTROL_L</autogen>
     </item>
 </root>
