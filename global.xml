@@ -106,4 +106,12 @@
         KeyCode::R, KeyCode::G,
       KeyCode::P, ModifierFlag::COMMAND_L</autogen>
     </item>
+    <item>
+      <name>Remap TG to quote</name>            
+      <identifier>remap.modifier.diagquote</identifier>
+      <autogen>
+        __SimultaneousKeyPresses__
+        KeyCode::T, KeyCode::G,
+      KeyCode::Q</autogen>
+    </item>
 </root>
