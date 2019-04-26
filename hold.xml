@@ -2,11 +2,12 @@
 <root>
   <modifierdef>MODOPD</modifierdef>
   <modifierdef>MODOPG</modifierdef>
-  <modifierdef>MODOPH</modifierdef>
+  <!-- <modifierdef>MODOPJ</modifierdef> -->
   <modifierdef>MODOPF</modifierdef>
+  <!-- <modifierdef>MODOPK</modifierdef> -->
   <item>
     <name>Hold MOD D</name>            
-    <identifier>remap.modifier.holdmodt</identifier>
+    <identifier>remap.modifier.holdmodd</identifier>
     <autogen>
       __HoldingKeyToKey__ 
       KeyCode::D, KeyCode::D,
@@ -31,15 +32,24 @@
       KeyCode::VK_NONE, KeyCode::VK_MODIFIER_MODOPG, 
     </autogen>
   </item>
-  <item>
-    <name>Hold MOD H</name>            
-    <identifier>remap.modifier.holdmodh</identifier>
-    <autogen>
-      __HoldingKeyToKey__ 
-      KeyCode::H, KeyCode::H,
-      KeyCode::VK_NONE, KeyCode::VK_MODIFIER_MODOPH, 
-    </autogen>
-  </item>
+  <!-- <item> -->
+  <!--   <name>Hold MOD J</name>             -->
+  <!--   <identifier>remap.modifier.holdmodj</identifier> -->
+  <!--   <autogen> -->
+  <!--     __HoldingKeyToKey__  -->
+  <!--     KeyCode::J, KeyCode::J, -->
+  <!--     KeyCode::VK_NONE, KeyCode::VK_MODIFIER_MODOPJ,  -->
+  <!--   </autogen> -->
+  <!-- </item> -->
+  <!-- <item> -->
+  <!--   <name>Hold MOD K</name>             -->
+  <!--   <identifier>remap.modifier.holdmodk</identifier> -->
+  <!--   <autogen> -->
+  <!--     __HoldingKeyToKey__  -->
+  <!--     KeyCode::K, KeyCode::K, -->
+  <!--     KeyCode::VK_NONE, KeyCode::VK_MODIFIER_MODOPK,  -->
+  <!--   </autogen> -->
+  <!-- </item> -->
   <item>
     <name>MOD G + H/T/N remaps to Copy/Cut/Paste</name>            
     <identifier>remap.modifier.modgcutcopy</identifier>
@@ -104,5 +114,33 @@
       KeyCode::K, ModifierFlag::MODOPD,
       KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L
     </autogen>
-  </item>    
+  </item>
+  <!-- <item> -->
+  <!--   <name>MOD J + D/F remaps to Up/Down Cursor</name>             -->
+  <!--   <identifier>remap.modifier.modjupdowncursor</identifier> -->
+  <!--   <autogen> -->
+  <!--     __KeyToKey__ -->
+  <!--     KeyCode::D, ModifierFlag::MODOPJ, -->
+  <!--     KeyCode::CURSOR_DOWN -->
+  <!--   </autogen> -->
+  <!--   <autogen> -->
+  <!--     __KeyToKey__ -->
+  <!--     KeyCode::F, ModifierFlag::MODOPJ, -->
+  <!--     KeyCode::CURSOR_UP -->
+  <!--   </autogen> -->
+  <!-- </item> -->
+  <!-- <item> -->
+  <!--   <name>MOD K + D/F remaps to Up/Down Word</name>             -->
+  <!--   <identifier>remap.modifier.modkupdownword</identifier> -->
+  <!--   <autogen> -->
+  <!--     __KeyToKey__ -->
+  <!--     KeyCode::D, ModifierFlag::MODOPJ, -->
+  <!--     KeyCode::CURSOR_DOWN, ModifierFlag::OPTION_L -->
+  <!--   </autogen> -->
+  <!--   <autogen> -->
+  <!--     __KeyToKey__ -->
+  <!--     KeyCode::F, ModifierFlag::MODOPJ, -->
+  <!--     KeyCode::CURSOR_UP, ModifierFlag::OPTION_L -->
+  <!--   </autogen> -->
+  <!-- </item>     -->
 </root>

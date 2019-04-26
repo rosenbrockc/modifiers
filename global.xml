@@ -1,10 +1,31 @@
 <?xml version="1.0"?>
 <root>
   <item>
+      <name>Remap DI to F2</name>            
+      <identifier>remap.modifier.diagf2</identifier>
+      <autogen>
+        __SimultaneousKeyPresses__
+        KeyCode::G, KeyCode::H,
+        KeyCode::F2
+      </autogen>
+  </item>
+  <item>
     <name>H+T Maps to Delete</name>            
     <identifier>remap.modifier.simulGCtoFD</identifier>
     <autogen>__SimultaneousKeyPresses__ KeyCode::K, KeyCode::J,
     KeyCode::DELETE</autogen>
+  </item>
+  <item>
+    <name>H+B Maps to Grave Accent</name>
+    <identifier>remap.modifier.simulKNtoBQ</identifier>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::N,
+    KeyCode::BACKQUOTE</autogen>
+  </item>
+  <item>
+    <name>U+K Maps to Colon</name>
+    <identifier>remap.modifier.simulFVtoCO</identifier>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::V,
+    KeyCode::Z, ModifierFlag::SHIFT_L</autogen>
   </item>
   <item>
     <name>T+N Maps to Forward Delete</name>            
